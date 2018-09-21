@@ -1,4 +1,5 @@
 /**
+ * Copyright (C) 2018  The Perfect App Ltd
  * Copyright (C) 2017  Niklas Rosenstein
  * Copyright (C) 2014  PHPdev32
  *
@@ -254,7 +255,7 @@ int main(int argc, const char** argv) {
     }
 
     /* Read LZMA chunks. */
-    while (flags & 1 << 24) {
+    while (flags & (0x800000 |  0x01000000)) {
         flags = stream_read_64(&stream);
         length = stream_read_64(&stream);
         char plain = (length == 0x1000000);
