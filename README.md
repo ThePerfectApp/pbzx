@@ -24,6 +24,10 @@ To compile `pbzx`, do
 
 ## Changelog
 
+__v1.0.3__
+
+- Add support for newer payload files.
+
 __v1.0.2__
 
 - Add `-v` flag to print version of `pbzx`

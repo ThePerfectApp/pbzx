@@ -31,7 +31,7 @@
 
 #define XBSZ 4 * 1024
 #define ZBSZ 1024 * XBSZ
-#define VERSION "1.0.2"
+#define VERSION "1.0.3"
 
 /* Structure to hold the command-line options. */
 struct options {
